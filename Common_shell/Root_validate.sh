@@ -2,6 +2,9 @@
 
 echo "User running this script: $USER"
 
+
+
+
 USER_ID=$(id -u)
 
 if [ $USER_ID -ne 0 ]
