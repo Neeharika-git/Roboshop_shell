@@ -1,14 +1,10 @@
-#/bin/bash
-echo "$1"
-
 validate(){
-    if [ $1 -eq 0 ]
+    if [ $? -eq 0 ]
     then
-        echo "Validation is successful"
-    else
+        echo "validation is successful"
+    else 
         echo "validation is failed"
     fi
-
 }
 
 validate $?
