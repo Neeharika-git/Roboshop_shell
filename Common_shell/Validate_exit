@@ -7,5 +7,5 @@ validate(){
     fi
 }
 
-validate $?
+validate $1
 echo "$?"
