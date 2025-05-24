@@ -2,13 +2,9 @@
 
 USER_ID = $USER
 
-if(USER_ID ne 0)
+if(USER_ID -ne root)
    then 
-    {
         echo "please login with root user"
-    }
 else
-    {
-        Echo "You are in root user, proceeding further"
-    }
+     Echo "You are in root user, proceeding further"
 fi
