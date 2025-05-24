@@ -1,5 +1,5 @@
 #/bin/bash
 
-start_time=$(date %s)
+start_time=$(date +%s)
 
 echo $start_time
