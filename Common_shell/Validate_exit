@@ -2,7 +2,7 @@
 echo "$1"
 
 validate(){
-    if [ $1 == 0 ]
+    if [ $? == 0 ]
     then
         echo "Validation is successful"
     else
@@ -12,3 +12,4 @@ validate(){
 }
 
 validate $?
+echo "$1"
