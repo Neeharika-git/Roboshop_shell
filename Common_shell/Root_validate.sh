@@ -1,8 +1,11 @@
 #/bin/bash
 
-USER_ID = $USER
+USER_1 = $USER
+echo $USER_1
 
-if(USER_ID -ne root)
+USER_ID = $(-id -u)
+
+if(USER_ID -ne 0)
    then 
         echo "please login with root user"
 else
