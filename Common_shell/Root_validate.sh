@@ -1,9 +1,8 @@
 #/bin/bash
 
-USER_1 = $USER
-echo $USER_1
+echo "User running this script: $USER"
 
-USER_ID = $(-id -u)
+USER_ID = $(id -u)
 
 if(USER_ID -ne 0)
    then 
