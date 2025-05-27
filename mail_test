@@ -7,6 +7,6 @@ DISK_THRESHOLD=2
 while IFS = read line
 do
     DISK=$(DISK_USAGE | awk '{print $5f}' | cut -d "%" -f1)
-    FILE=$(DISK_USAGE | awk '{print $6f}'
+    FILE=$(DISK_USAGE | awk '{print $6f}')
     echo $FILE : $DISK
 done <<< $DISK_USAGE
