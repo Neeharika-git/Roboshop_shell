@@ -4,7 +4,7 @@ DISK_USAGE=$(df -h | grep -v "Size")
 DISK_THRESHOLD=2
 
 
-while IFS = read line
+while IFS=read line
 do
     DISK=$(DISK_USAGE | awk '{print $5f}' | cut -d "%" -f1)
     FILE=$(DISK_USAGE | awk '{print $6f}')
